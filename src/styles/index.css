@@ -1,0 +1,474 @@
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
+s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+figure, header, nav, section, article, aside, footer, figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+html[xmlns] .clearfix {
+  display: block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+header, nav, section, article, aside, footer, hgroup {
+  display: block;
+}
+/* body{
+  width: 80%;
+} */
+
+.logo{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+  background-color: #99999952;
+  color: white;
+  letter-spacing: 2px;
+
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.nav ul{
+  display: flex;
+  gap: 1.2rem;
+}
+.nav li:hover{
+  cursor: pointer;
+  color: #f5a425;
+}
+.heading-links{
+  align-items: center;
+}
+
+.bar{
+  width: 2rem;
+  background-color: rgb(255, 255, 255);
+  color: white;
+  height: 3px;
+  margin-top: 0.4rem;
+}
+.heading-links{
+  align-items: center;
+}
+
+#bg-video {
+    min-width: 100%;
+    min-height: 100vh;
+    max-width: 100%;
+    max-height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    background-color: #99999987;
+    position: absolute;
+    top: 0;
+}
+.collective{
+  height: 100vh;
+}
+.front-intro{
+  position: relative;
+  top: 30%;
+  color: rgb(239, 239, 239);
+  padding: 0 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.front-intro h3{
+  padding: 1rem 0;
+}
+.front-intro h2{
+  padding-bottom: 1rem;
+  font-size: 2.2em;
+  font-weight: bolder;
+}
+.front-intro p{
+  padding: 0.25rem 0;
+}
+.front-intro button{
+  background-color: #a12c2f;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  border: none;
+  margin-top: 2rem;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.intro{
+  background-color: rgba(0, 0, 0, 0.701);
+}
+
+@media screen and (max-width: 900px) {
+  .hide{
+    display: none;
+  }
+  .nav{
+    justify-content: space-between;
+  }
+  .front-intro{
+    padding: 1rem;
+    top: 20%;
+  }
+}
+@media screen and (min-width: 900px) {
+ .bar{
+  display: none;
+ }
+}
+/*..........MEETING TYPES...........................................*/
+.edu-type{
+  display: flex;
+  justify-content: space-around;
+  padding: 0 3rem;
+  gap: 1rem;
+
+}
+
+
+.best{
+  background-image: url('/Images/service-item-bg.jpg');
+  padding: 3rem 2rem;
+  position: relative;
+  border-radius: 2rem;
+  text-align: center;
+}
+.type{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.best h3{
+  color: #fff;
+  padding: 1rem;
+}
+.best p{
+  color: #fff;
+  line-height: 1.3rem;
+  padding: 0.5rem;
+}
+
+@media screen and (min-width:1000px) {
+  .best{
+    top: -3rem;
+  }
+}
+
+@media screen and (max-width:800px) {
+  .edu-type{
+    flex-direction: column;
+    position: relative;
+
+    width: 100%;
+    padding: 2rem 1.3rem;
+  }
+  .nav{
+    padding: 1rem 1.5rem;
+  }
+}
+/*..........Upcoming Meetings*/
+.total-cover-meetings{
+  background-image: url('/Images/meetings-bg.jpg');
+  background-size: cover;
+  padding-bottom: 8rem;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+
+.hr-h3{
+  text-align: center;
+  padding: 0 3rem;
+  color:  #ffffff;
+}
+.hr-h3 hr{
+  color: #000000;
+}
+/*.....Meeting Details and what its Entails*/
+
+.lect-details{
+  background-color: #ffffff;
+  color: black;
+  border-radius: 0 0 2rem 2rem;
+  padding: 1rem;
+  
+}
+
+.combine-lect{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.lecture-details1{
+  width: fit-content;
+  justify-content: space-around;
+  border-radius: 2rem;
+  gap: 1rem;
+}
+.lecture-details2{
+
+  width: fit-content;
+  justify-content: center;
+  gap: 1rem;
+}
+.overview{
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 2rem;
+  margin-top: 2rem;
+  
+}
+.overview img{
+  border-radius: 2rem 2rem 0 0;
+}
+
+/*...............Application Aspect etting a degree...*/
+.apply-about{
+  background-image: url(../Images/apply-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 2rem;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+  .apply-about{
+    flex-direction: column;
+  }
+}
+
+.apply{
+  padding: 2rem 2rem;
+  color: #fefefe;
+  background-color: #ffffff1e;
+  margin-top: 2rem;
+}
+.apply h2{
+  padding: 2rem 0;
+}
+.apply p{
+  line-height: 1.5rem;
+
+}
+.apply button {
+  background-color: #fc4917;
+  padding: 1rem 2rem;
+  margin: 2rem 0;
+  border: none;
+  border-radius: 3rem;
+  color: white;
+}
+
+.about-edu{
+  background-color: #fff;
+  padding: 2rem;
+  line-height: 1.2rem;
+  margin-top: 2rem;
+  border-radius: 2rem;
+}
+
+.about-edu h3{
+  padding: 1rem;
+  color: #f5a425;
+}
+
+.about-edu p{
+  line-height: 1.6rem;
+  padding-left: 1rem;
+}
+
+/*'
+.............Courses Yeah Popular cousrs in the campus.......
+ */
+
+.popular-course{
+  background-image: url(../Images/meetings-page-bg.jpg);
+  padding: 10rem 5rem;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+.our{
+  color: #fff;
+  padding: 1.5rem 3rem;
+}
+
+.course-details{
+  display: flex;
+  gap: 1rem;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.course-details h2{
+  padding-bottom: 0.7rem;
+}
+.course1,.course2,.course3,.course4{
+padding-top: 3rem;
+
+}
+.course-exp{
+  background-color: #fff;
+  color: #000000;
+  padding: 1rem 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.course-exp p:nth-child(4){
+  text-align: right;
+  color: #ff3700;
+  font-weight: bolder;
+}
+
+/*.............Few facts about our University.......*/
+
+.few-facts{
+  background-image: url(../Images/facts-bg.jpg);
+  background-attachment: fixed;
+  padding: 8rem 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.few-facts h1{
+  color: #fff;
+  padding-bottom: 2rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;
+}
+
+.county h1{
+  color: #f5a425;
+}
+.county p{
+  color: #fff;
+  font-size: 1.3em;
+}
+
+.county{
+  background-color: #ffffff22;
+  width: fit-content;
+  border-radius: 1rem;
+  padding: 2rem 4rem;
+  text-align: center;
+}
+.join-course1{
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.join-course2{
+  display: flex;
+  gap: 2rem;
+}
+
+.county h1{
+  padding: 1rem;
+}
+
+.few-facts img{
+  border-radius: 2rem;
+}
+
+/*..................................Contact Information*/
+
+.contact-info{
+  background-image: url(../Images/meetings-bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  padding: 7rem 5rem;
+  padding-top: 10rem;
+}
+
+.contact-details{
+  background-color: #fff;
+  padding: 3rem 2rem;
+  border-radius: 2rem;
+}
+.contact-details h2{
+  padding-bottom: 1rem;
+}
+input{
+  width: 15rem;
+  height: 1.2rem;
+  border-radius: 1.5rem;
+  padding: 0.7rem;
+  background-color: rgba(211, 211, 211, 0.238);
+  border: none;
+  outline: none;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+}
+
+textarea{
+  width: 100%;
+  height: 8rem;
+  border: none;
+  background-color: rgba(211, 211, 211, 0.238);
+  padding: 1rem;
+  margin-bottom: 2rem;
+  outline: none;
+  border-radius: 1.5rem;
+}
+.send-btn{
+background-color: #a12c2f;
+color: #fff;
+padding: 1rem 1.5rem;
+border: none;
+border-radius: 2rem;
+}
+
+/*
+.......................Footer and the copyright act.
+*/
+
+.footer{
+  padding-top: 5rem;
+  text-align: center;
+  color: #fff;
+}
+
+.footer h3{
+  padding-top: 4rem;
+}
+
+.footer h4{
+  color: #f5a425;
+}
