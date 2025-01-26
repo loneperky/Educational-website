@@ -9,8 +9,7 @@ function Body(){
     <>
       <div className="intro">
         <div className="collective">
-        <Video />
-        <Header />
+         <Video />
 
         <div className="front-intro">
           <h3>HELLO STUDENTS</h3>
@@ -103,31 +102,28 @@ function Body(){
 </div>
        
       <div className="few-facts">
-          <div className="few1">
-          <h1>A Few Facts About Our University</h1>
-          <div className="countdown">
-            <div className="join-course1">
-              <div className="count1">
-                <Count per="94%" para="Sucessed Students" img="" alt=""/>
-              </div>
-              <div className="count2">
-                <Count per="126" para="Current Teachers" img="" alt=""/>
-              </div>
-            </div>
+           <h1>A Few Facts About Our University</h1>
+           <div className="image-count">
+            <div className="countdown">
+                <div>
+                  <Count per="94%" para="Sucessed Students" img="" alt=""/>
+                </div>
+                <div>
+                  <Count per="126" para="Current Teachers" img="" alt=""/>
+                </div>
 
-            <div className="join-course2">
-              <div className="count3">
-                <Count per="2345" para="New Student" img="" alt=""/>
-              </div>
-              <div className="count4">
-                <Count per="32" para="Awards" img="" alt=""/>
-              </div>
+
+                <div className="count">
+                  <Count per="2345" para="New Student" img="" alt=""/>
+                </div>
+                <div className="count">
+                  <Count per="32" para="Awards" img="" alt=""/>
+                </div> 
             </div>
-          
             
+            <img src="/Images/video-item-bg.jpg" alt="" />
            </div>
-          </div>
-       <img src="/Images/video-item-bg.jpg" alt="" />
+         
       </div>
 
       <div className="contact-info">

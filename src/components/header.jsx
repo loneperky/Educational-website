@@ -1,4 +1,5 @@
 import '../styles/index.css'
+import { Link,NavLink } from 'react-router-dom'
 
 function Header (){
   return(
@@ -9,12 +10,21 @@ function Header (){
         </div>
        <div className="heading-links">
           <ul>
-            <li className='hide'>HOME</li>
-            <li className='hide'>MEETINGS</li>
-            <li className='hide'>APPLY NOW</li>
-            <li className='hide'>PAGES</li>
-            <li className='hide'>COURSES</li>
-            <li className='hide'>CONTACT US</li>
+            <li className='hide'>
+              <NavLink to="/">HOME</NavLink>
+            </li>
+            <li className='hide'>
+             <NavLink> APPLY NOW</NavLink>
+             </li>
+            <li className='hide'>
+             <NavLink>PAGES</NavLink>
+             </li>
+            <li className='hide'>
+             <NavLink> COURSES</NavLink>
+             </li>
+            <li className='hide'>
+             <NavLink> CONTACT US</NavLink>
+             </li>
             <li> 
              <div className="nav-btn">
               <div className="bar"></div>
@@ -41,10 +51,10 @@ function Video(){
       <video autoPlay="on" muted loop id="bg-video">
       <source src="/Images/course-video.mp4" type="video/mp4" />
       </video>
-    
     </>
   )
 }
-
+const num = Math.random() * 10
+{num?'hello':'jdjj'}
 export default Header
 export {Video}

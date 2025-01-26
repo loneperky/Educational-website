@@ -53,7 +53,7 @@ header, nav, section, article, aside, footer, hgroup {
   justify-content: space-between;
   align-items: center;
   padding: 2rem 4rem;
-  background-color: #99999952;
+  background-color: rgba(0, 0, 0, 0.869);
   color: white;
   letter-spacing: 2px;
 
@@ -68,6 +68,13 @@ header, nav, section, article, aside, footer, hgroup {
 }
 .nav li:hover{
   cursor: pointer;
+  color: #f5a425;
+}
+.nav a{
+  color: white;
+  text-decoration: none;
+}
+.nav a:hover{
   color: #f5a425;
 }
 .heading-links{
@@ -97,7 +104,7 @@ header, nav, section, article, aside, footer, hgroup {
     top: 0;
 }
 .collective{
-  height: 100vh;
+  height: 80vh;
 }
 .front-intro{
   position: relative;
@@ -184,7 +191,7 @@ header, nav, section, article, aside, footer, hgroup {
 
 @media screen and (min-width:1000px) {
   .best{
-    top: -3rem;
+    top: -7rem;
   }
 }
 
@@ -192,20 +199,21 @@ header, nav, section, article, aside, footer, hgroup {
   .edu-type{
     flex-direction: column;
     position: relative;
-
-    width: 100%;
     padding: 2rem 1.3rem;
   }
   .nav{
     padding: 1rem 1.5rem;
+  }
+  .best{
+    border-radius: 0;
   }
 }
 /*..........Upcoming Meetings*/
 .total-cover-meetings{
   background-image: url('/Images/meetings-bg.jpg');
   background-size: cover;
-  padding-bottom: 8rem;
-  background-position: center center;
+  padding-bottom:2 rem;
+  background-position: center;
   background-attachment: fixed;
 }
 
@@ -232,6 +240,8 @@ header, nav, section, article, aside, footer, hgroup {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  gap: 1rem;
+  padding-top: 1rem;
 }
 
 .lecture-details1{
@@ -249,21 +259,25 @@ header, nav, section, article, aside, footer, hgroup {
 .overview{
   display: flex;
   flex-direction: column;
-
   border-radius: 2rem;
-  margin-top: 2rem;
-  
 }
 .overview img{
   border-radius: 2rem 2rem 0 0;
 }
 
+@media screen and (min-width:800px) {
+  .total-cover-meetings{
+    padding-top: 3rem;
+  }
+}
+
 /*...............Application Aspect etting a degree...*/
 .apply-about{
-  background-image: url(../Images/apply-bg.jpg);
+  background-image: url('/Images/apply-bg.jpg');
   background-size: cover;
   background-position: center;
-  padding: 5rem 2rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   background-attachment: fixed;
   background-repeat: no-repeat;
   display: flex;
@@ -271,11 +285,7 @@ header, nav, section, article, aside, footer, hgroup {
   gap: 2rem;
 }
 
-@media screen and (max-width: 800px) {
-  .apply-about{
-    flex-direction: column;
-  }
-}
+
 
 .apply{
   padding: 2rem 2rem;
@@ -317,6 +327,17 @@ header, nav, section, article, aside, footer, hgroup {
   padding-left: 1rem;
 }
 
+@media screen and (max-width: 800px) {
+  .apply-about{
+    flex-direction: column;
+    padding: 1rem;
+    padding-bottom: 2rem;
+  }
+  .about-edu{
+    border-radius: 0;
+    padding: 2rem 1rem;
+  }
+}
 /*'
 .............Courses Yeah Popular cousrs in the campus.......
  */
@@ -361,11 +382,17 @@ padding-top: 3rem;
 /*.............Few facts about our University.......*/
 
 .few-facts{
-  background-image: url(../Images/facts-bg.jpg);
+  background-image: url('/Images/facts-bg.jpg');
   background-attachment: fixed;
   padding: 8rem 5rem;
+  justify-content: space-between;
+}
+.image-count{
   display: flex;
   justify-content: space-between;
+}
+.countdowm{
+  display: flex;
 }
 .few-facts h1{
   color: #fff;
@@ -388,15 +415,6 @@ padding-top: 3rem;
   border-radius: 1rem;
   padding: 2rem 4rem;
   text-align: center;
-}
-.join-course1{
-  display: flex;
-  gap: 2rem;
-  margin-bottom: 2rem;
-}
-.join-course2{
-  display: flex;
-  gap: 2rem;
 }
 
 .county h1{
